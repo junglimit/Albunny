@@ -1,0 +1,95 @@
+.link-text {
+  text-decoration: none;
+  color: rgb(0, 0, 0, 1);
+}
+
+.slaveManagementList-OneSlave {
+  margin-bottom: 20px;
+  padding: 10px 0;
+  width: 100%;
+  height: 2.5rem;
+  // 기본 높이 2, 근무시간 배열 사이즈에 따라 2rem씩 추가하기
+  border: 3px solid white;
+  background: white;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  
+  &-common {
+    height: 2rem;
+    // 기본 높이 2, 근무시간 배열 사이즈에 따라 2rem씩 추가하기
+    // background: orange;
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    // margin-right: 20px;
+  }
+
+  &Date {
+    @extend .slaveManagementList-OneSlave-common;
+    margin-left: 3rem;
+    width: 8rem;
+    display: flex;
+    justify-content: center;
+    // border: 1px solid red;
+  }
+
+  &ScheduleStart {
+    @extend .slaveManagementList-OneSlave-common;
+    width: 14rem;
+    display: flex;
+    justify-content: center;
+    // border: 1px solid red;
+  }
+
+  &LogStart {
+    @extend .slaveManagementList-OneSlave-common;
+    width: 10rem;
+    display: flex;
+    justify-content: center;
+    // margin-left: 1rem;
+
+    .slaveManagementList-OneSlaveMoneyType {
+      width: 11rem;
+      // border: 1px solid red;
+      //----------------------
+      display: flex;
+      justify-content: center;
+    }
+    .slaveManagementList-OneSlaveInsurance {
+      width: 5rem;
+      // border: 1px solid red;
+      //----------------------
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &LogEnd {
+    @extend .slaveManagementList-OneSlave-common;
+    width: 8.8rem;
+    // margin-left: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // border: 1px solid rgb(38, 0, 255);
+
+    .slaveManagementList-OneSlaveScheduleOne {
+      width: 10rem;
+      //-----------
+      display: flex;
+      justify-content: center;
+      // border: 1px solid red;
+    }
+
+  }
+
+  &LogStatus {
+    @extend .slaveManagementList-OneSlave-common;
+    width: 10rem;
+    // margin-left: 6rem;
+    display: flex;
+    justify-content: center;
+    // border: 1px solid red;
+  }
+}

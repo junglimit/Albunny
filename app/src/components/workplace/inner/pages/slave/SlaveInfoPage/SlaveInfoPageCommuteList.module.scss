@@ -1,0 +1,76 @@
+.slaveManagementList-title {
+  width: 100%;
+  height: 2.5rem;
+  //-------------
+  display: flex;
+  // justify-content: left;
+  align-items: center;
+  //------------------
+  margin-top: 5px;
+  // border: 2px solid red;
+
+  &-common {
+    height: 2.5rem;
+    // border: 2px solid rgb(25, 116, 201);
+    background: rgba(0, 0, 0, 0.4);
+    //-----------------------------------
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //----------------------
+    color: aliceblue;
+    font-size: 1.1rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    font-weight: 600
+
+  }
+
+  &Name {
+    @extend .slaveManagementList-title-common;
+    width: 13rem;
+    padding-left: 5rem;
+    // border: 1px solid red;
+  }
+
+  &Wage {
+    @extend .slaveManagementList-title-common;
+    width: 17rem;
+    // padding-left: 4rem;
+    // border: 1px solid red;
+  }
+
+  &Schedule {
+    @extend .slaveManagementList-title-common;
+    width: 11rem;
+    // border: 1px solid red;
+  }
+
+  &Join {
+    @extend .slaveManagementList-title-common;
+    width: 15rem;
+    padding-right: 3rem;
+    // border: 1px solid red;
+  }
+  
+}
+
+.slaveManagementList-content {
+  width: 100%;
+  height: 33.5rem;
+  background: rgba(136, 136, 136, 0.3);
+  max-height: 39rem;
+  overflow-y: scroll;
+  //------------------------------------
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 10px solid rgba(201, 200, 200, 0.1);
+  padding-bottom: 120px;
+
+  .slaveManagementList-box {
+    width: 97%;
+    height: 95%;
+    // border: 3px solid red;
+  }
+}

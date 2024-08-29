@@ -1,0 +1,41 @@
+
+.slaveRegistPageWageInsurance-box {
+  display: flex;
+  justify-content: left;
+  width: 43rem;
+  // height: 2.5rem;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 32px;
+  padding-left: 4.5rem;
+  // border: 1px solid rgb(120, 1, 255);
+
+  .slaveRegistPageWageInsurance-title {
+    width: 10rem;
+  }
+
+  .slaveRegistPageWageInsurance-contentBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //----------------------
+    width: 21.5rem;
+    height: 2.5rem;
+    // border: 1px solid yellowgreen;
+
+    .slaveRegistPageWageInsurance-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      //----------------------
+      width: 21.5rem;
+      height: 2.5rem;
+
+      .slaveRegistPageWageInsurance-input {
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-left: 1rem;
+      }
+    }
+  }
+}

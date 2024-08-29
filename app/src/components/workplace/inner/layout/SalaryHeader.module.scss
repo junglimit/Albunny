@@ -1,0 +1,74 @@
+.container {
+    //border: 1px solid #000;
+    background-color: #ff8803;
+    width: 1000px;
+    padding: 10px;
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+}
+
+.salaryHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.buttonWrapper {
+    position: absolute;
+    width: 50px; /* 클릭 영역의 너비 */
+    height: 50px; /* 클릭 영역의 높이 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.buttonWrapper:first-of-type {
+    left: 0;
+}
+
+.buttonWrapper:last-of-type {
+    right: 0;
+}
+
+.button {
+    background: none;
+    border: none;
+    font-size: 16px;
+    pointer-events: none;
+    background: none;
+    color: white;
+    display: flex;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.salaryText {
+    font-size: 20px;
+}
+
+.salaryBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    //border: 1px solid #000;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.salaryAmount {
+    font-size: 24px;
+    color: green;
+}
+
+.arrowButton {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    width: 25px;
+}

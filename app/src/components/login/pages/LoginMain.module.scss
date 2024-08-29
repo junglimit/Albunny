@@ -1,0 +1,124 @@
+.fullPageContainer {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.loginContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  box-sizing: border-box;
+}
+
+.loginTitle {
+  background-color: #ff8803;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  margin-bottom: 20px;
+  border-radius: 10px 10px 0 0;
+  color: white;
+}
+
+.inputContainer {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.inputLabel {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.inputField {
+  width: 100%; /* 인풋 필드를 100%로 설정 */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff; /* 인풋 창 배경색 제거 */
+  box-sizing: border-box;
+}
+
+.checkboxContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+
+  .form-check-input {
+    background-color: transparent;
+    border-color: #ccc;
+  }
+
+  .form-check-input:checked {
+    background-color: #2a9d8f;
+    border-color: #2a9d8f;
+  }
+}
+
+.submitButton {
+  width: 100%;
+  padding: 10px;
+  background-color: #ff8803;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+}
+
+.submitButton:hover {
+  background: #ff5e00;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+.recoverButton {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #ff8803; /* 복구하기 버튼 색상 */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  width: 100%;
+}
+
+.recoverButton:hover {
+  background: #ff5e00;
+}
+
+.additionalLinks {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.linkButton {
+  background-color: #ff8803;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  width: calc(50% - 10px); /* 버튼 너비를 50%로 설정하고 간격 추가 */
+  margin-top: 10px;
+}
+
+.linkButton:hover {
+  background: #ff5e00;
+}

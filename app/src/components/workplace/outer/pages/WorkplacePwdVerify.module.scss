@@ -1,0 +1,77 @@
+.modalOverlay{
+    display: flow-root;
+    justify-content: center;
+    align-items: center;
+    // padding-top: 100px; 
+    // min-height: calc(100vh - 200px); 
+    background-color: rgba(255 255 200 / 29%); /* Page background color */
+    height: 858px;
+}
+
+.modalContent {
+    background-color:rgba(247, 228, 205, 0.6784313725);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    // max-width: 400px;
+    width: 480px;
+    text-align: center;
+    margin: 0 auto; /* Center horizontally */
+    margin-top: 300px;
+}
+
+.inputGroup {
+    padding-top: 20px;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.error {
+    color: red;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.buttonGroup {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.submitButton, .cancelButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #2a9d8f;
+    color: #fff;
+    width: 48%; /* Ensure buttons take up equal width */
+}
+
+.submitButton:hover, .cancelButton:hover {
+    background-color: #258579;
+}
+
+.header1 {
+    background-color:#ff8803;
+    padding: 18px;
+    border-radius: 12px;
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 25px;
+}

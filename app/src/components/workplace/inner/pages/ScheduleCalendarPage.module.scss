@@ -1,0 +1,78 @@
+
+.calendar {
+  width: 50%;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.calendarHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #ff8803;
+  color: white;
+}
+
+.calendarHeader h2 {
+  margin: 0;
+}
+
+.calendarBody {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  padding: 16px;
+  font-size: 20px;
+  height: 550px;
+}
+
+.day {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin: 4px;
+  border-radius: 4px;
+  cursor: pointer;
+  //font-weight: bold;
+}
+
+.day:hover {
+  background-color: #ff8803;
+  color: #fff;
+}
+
+.dayOfWeek {
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin: 4px;
+  border-radius: 4px;
+}
+
+// 클릭 날짜 스타일
+.daySelected {
+  background-color: #ff8803;
+  color: #fff;
+  font-weight: bold;
+}
+
+.arrowButton {
+  background: none;
+  border: none;
+  color: white;
+  display: flex;
+  font-size: 30px;
+  cursor: pointer;
+
+}
+
+

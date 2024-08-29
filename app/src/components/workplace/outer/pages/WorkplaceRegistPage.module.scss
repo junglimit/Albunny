@@ -1,0 +1,221 @@
+// WorkplaceRegistPage.module.scss
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color:#ffffe34a;
+  padding: 70px;
+  min-height: 100vh;
+
+}
+
+.form {
+  max-width: 800px; // 폼의 최대 너비 설정
+  width: 100%;
+  background-color:rgba(247, 228, 205, 0.6784313725);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.formHeader {
+  text-align: center;
+  background-color: #ff8803;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.formHeader h1 {
+  font-size: 29px;
+  color: white;
+}
+
+.formGroup1 {
+  display: inline-block;
+  width: 355px;
+  margin-bottom: 15px;
+}
+
+.formGroup2 {
+  display: grid;
+  margin-left: 50px;
+  width: 290px;
+  margin-bottom: 15px;
+}
+
+.formGroup4 {
+  width: 210px;
+}
+
+.formGroup {
+  margin-bottom: 15px;
+}
+
+.formGroup input,
+.formGroup select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.addressSection {
+  margin-bottom: 5px;
+  display: grid;
+  width: 360px;
+}
+
+.formGroup3 {
+  margin-bottom: 15px;
+  // margin-left: 50px;
+  display: grid;
+  width: 330px;
+}
+
+.addressSection .addressLabel {
+  display: inline;
+  margin-bottom: 5px;
+  // font-size: 20px;
+  color: #555;
+}
+
+.address {
+  margin-bottom: 2px;
+}
+
+.addressSection .addressInput {
+  width: 355px;
+  display: inline-block;
+  // width: calc(100% - 120px); // 주소 입력 필드 넓이 조정
+}
+
+.addressSection {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #2a9d8f; // 초록색
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 203px;
+}
+
+.addressinput {
+  // width: 280px;
+  width: 285px; /* 이메일 입력 필드의 너비를 다른 필드와 동일하게 설정 */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.searchButton {
+  background-color: #ff8803;
+    border-radius: 5px;
+    color: white;
+    padding: 0.5px 10px;
+    border: none;
+    margin-left: 10px;
+}
+
+.sizeLabel {
+  margin-left: 20px;
+  width: 300px;
+}
+
+.searchButton:hover {
+  background-color: #ff584c;
+}
+
+.sizeSection {
+  display: flex;
+  gap: 20px; // 항목 사이의 간격 조정
+  margin-bottom: 15px;
+}
+
+.sizeSection .sizeGroup {
+  flex: 1;
+}
+
+.sizeSection .sizeDropdown {
+  flex: 1;
+  margin-left: 175px;
+}
+
+.buttonContainer {
+  margin-top: 15px;
+  display: flex;
+  // justify-content: space-between;
+  // margin-top: 20px;
+}
+
+.buttonContainer .cancelButton {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #2a9d8f; // 빨간색
+  color: #fff;
+}
+
+.buttonContainer .cancelButton:hover {
+  background-color: #ff584c;
+}
+
+.buttonContainer .submitButton {
+  margin-right: 15px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #2a9d8f; // 녹색
+  color: #fff;
+}
+
+.buttonContainer .submitButton:hover {
+  background-color: #258579;
+}
+
+/* 빨간색 오류 메시지 */
+.errorRed {
+  color: red;
+  height: 20px; /* 여유 공간을 고정으로 설정 */
+  margin: 5px 0 0 0; /* 여유 공간과 입력 필드 간의 간격 조절 */
+  font-size: 14px;
+}
+
+/* 검은색 오류 메시지 */
+.errorBlack {
+  color: black;
+  height: 20px; /* 여유 공간을 고정으로 설정 */
+  margin: 5px 0 0 0; /* 여유 공간과 입력 필드 간의 간격 조절 */
+  font-size: 14px;
+}
+
+/* .formRow 클래스는 동일하게 유지 */
+.formRow {
+width: 600px;
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
+}
+
+.formGroup5 {
+  width: 300px;
+  margin-left: 120px;
+}
+
+.formGroup1 {
+display: flex;
+flex-direction: column;
+width: 310px;
+margin-bottom: 15px;
+}
+
+

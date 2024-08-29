@@ -1,0 +1,110 @@
+.noticeBoard {
+  text-align: left;
+  font-size: 20px;
+  border-bottom: 2px solid #ffc107;
+  padding-bottom: 10px;
+  margin: 20px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+  .actions {
+    width: 10%;
+    display: flex;
+    justify-content: flex-end;
+
+    button {
+      padding: 10px 30px;
+      border: none;
+      border-radius: 5px;
+      background-color: #ff8803;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      align-self: flex-end;
+
+      &:hover {
+        background-color: #ff5e00;
+      }
+
+      &:first-child {
+        background-color: #ff8803;
+
+        &:hover {
+          background-color: #ff5e00;
+        }
+      }
+    }
+  }
+
+.noticeList {
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 15px;
+
+    li {
+      width: 80%;
+      height: 110px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      border-bottom: 1px solid #e0e0e0;
+      cursor: pointer;
+
+      &:first-child {
+        border-top: 1px solid #e0e0e0;
+      }
+
+      .title {
+        flex-grow: 1;
+        text-align: left;
+        font-weight: bold;
+        margin-left: 50px;
+      }
+
+      .date {
+        text-align: right;
+        color: #999;
+        width: 120px;
+      }
+    }
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  height: 40px;
+
+
+  .page {
+    font-size: 20px;
+    margin: 0 20px;
+    align-self: center;
+  }
+
+  button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff8803;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #ff5e00;
+    }
+  }
+}

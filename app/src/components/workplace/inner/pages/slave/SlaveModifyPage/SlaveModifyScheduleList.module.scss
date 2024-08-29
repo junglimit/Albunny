@@ -1,0 +1,66 @@
+.slaveRegistPageSchedule-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  width: 43rem;
+  font-size: 20px;
+  font-weight: 700;
+  padding-left: 4.5rem;
+
+  .slaveRegistPageSchedule-notice {
+    color: red;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 5px 0;
+  }
+
+  .slaveRegistPageInputScheduleTitle-box {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    // border: 2px solid red;
+    //-----------------------
+    width: 38.5rem;
+    height: 2.5rem;
+    margin: 5px 0;
+
+    .nonScheduleType {
+      width: 10.8rem;
+      height: 2.5rem;
+      //-------------
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      //------------------
+      font-weight: 600;
+      color: rgb(255, 255, 255);
+      //--------------------------
+      border: 0.1px solid rgb(255, 255, 255, 0.3);
+      //--------------------------------------
+      cursor: pointer;
+      //-------------------------------------------
+      background: rgb(204, 204, 204);
+    }
+
+    .scheduleType {
+      width: 10.8rem;
+      height: 2.5rem;
+      //-------------
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      //------------------
+      font-weight: 600;
+      color: rgb(255, 255, 255);
+      //--------------------------
+      //border: 1px solid rgb(1, 119, 115);
+      cursor: pointer;
+      //---------------------------------------------
+      background: #ff8803;
+    }
+  }
+
+  .slaveRegistPageInputScheduleContent-box {
+    margin-top: 5px;
+  }
+}

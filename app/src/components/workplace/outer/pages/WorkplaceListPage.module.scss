@@ -1,0 +1,186 @@
+.container {
+  padding: 20px;
+  background-color: white;
+  // min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 858px;
+}
+
+.content {
+  max-width: 1200px;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  // margin-bottom: 20px;
+  // float: inline-end;
+  // text-align: center;
+}
+
+.registerButton, .logoutButton {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.registerButton {
+  background-color: #ff8803;
+  color: #fff;
+  // padding-top: 15px;
+  // padding-bottom: 15px;
+  font-size: 16px;
+}
+
+.logoutButton {
+  background-color: #f44336;
+  color: #fff;
+}
+
+.registerButton:hover, .logoutButton:hover {
+  background-color: #ff6803;
+}
+
+.notworkplace {
+  color: gray;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.workplaceWrap {
+  width: 800px;
+  background:#f8f8f8;
+  padding: 15px;
+  border-radius: 7px;
+  // margin: 35px;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  padding-top: 15px;
+}
+
+.wrap {
+  display: ruby-text;
+}
+
+.name {
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+
+.listItem {
+  // margin-top: 46px;
+  width: 800px;
+  background-color: rgb(255 255 255 / 78%);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  position: relative; /* Added to control button placement */
+}
+
+.listItem h2 {
+  font-size: 24px;
+  margin: 0 0 10px 0;
+}
+
+.listItem p {
+  margin: 5px 0;
+  color: #555;
+  font-size: 19px;
+}
+
+.listItem p.date {
+  color: #828181b5;
+}
+
+.link {
+  text-decoration: none;
+  color: #333;
+}
+
+.buttonGroup {
+  display: flex;
+  justify-content: flex-end; /* Align buttons to the right */
+  margin-top: 15px;
+  gap: 10px; /* Space between buttons */
+  position: absolute;
+  right: 20px; /* Align the button group with the right side of the container */
+  bottom: 20px; /* Adjust to place the buttons at the bottom */
+}
+
+.modifyButton, .deleteButton {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.modifyButton {
+  background-color: #2a9d8f;
+  color: #fff;
+}
+
+.deleteButton {
+  background-color:#2a9d8f;
+  color: #fff;
+}
+
+.modifyButton:hover {
+  background-color: #258579;
+}
+
+.deleteButton:hover {
+  background-color: #ff584c;
+}
+
+// Pagination 스타일
+.pagination {
+  display: flex;
+  justify-content: center; // 가운데 정렬
+  margin-top: 20px; // 위쪽 여백
+  padding: 10px; // 전체 패딩
+}
+
+.pageButton {
+  background-color: #ff8803; // 기본 배경색
+  color: #fff; // 기본 글자색
+  border: none; // 기본 테두리 없음
+  border-radius: 8px; // 둥근 테두리
+  padding: 10px 15px; // 패딩
+  margin: 0 5px; // 버튼 간격
+  font-size: 16px; // 글자 크기
+  cursor: pointer; // 클릭 커서
+
+  // hover 상태 스타일
+  &:hover {
+      background-color: #ff5e00; // hover 배경색
+  }
+
+  // active 상태 스타일
+  &.activePage {
+      background-color: #ff5e00; // 클릭시 배경색
+      border: 1px solid #fff; // 클릭시 테두리 색상
+  }
+}
+
+.searchContainer {
+}
+
+.searchInput {
+  padding: 10px;
+  border: 1px solid #ff8803;
+  border-radius: 5px;
+}

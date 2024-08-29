@@ -1,0 +1,215 @@
+.contentBox {
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.title {
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: rgba(43, 42, 42, 0.9);
+}
+
+.serverTime {
+  width: 620px;
+  height: 170px;
+  margin: 0 auto;
+  font-size: 50px;
+  color: #ffc977;
+  font-weight: 700;
+  margin-bottom: 70px;
+  text-align: center;
+  align-items: center;
+  background: #f5f5f5;
+  border: 2px solid #ffc977;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: 'Digital-7', monospace;
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+}
+.flipDigit {
+  width: 80px; /* 적절한 너비 */
+  height: 110px; /* 적절한 높이 */
+  perspective: 1000px; /* 3D 시각 효과를 위한 원근감 설정 */
+  position: relative;
+  display: inline-block;
+  margin: 0 4px; /* 숫자 간의 간격 설정 */
+}
+
+.flipDigit .flipTop,
+.flipDigit .flipBottom {
+  width: 100%;
+  height: 120px;
+  line-height: 120px; /* 숫자 높이에 맞춤 */
+  text-align: center;
+  font-size: 80px; /* 글씨 크기 */
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  color: #ffc977; /* 글자 색상 */
+  background: #fff; /* 배경색 */
+  border: 2px solid #ffc977; /* 테두리 색상 */
+  border-radius: 8px; /* 모서리 둥글게 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+  backface-visibility: hidden; /* 뒷면이 보이지 않도록 */
+}
+
+.flipDigit .flipTop {
+  top: 0;
+  transform-origin: bottom; /* 플립 방향 설정 */
+}
+
+.flipDigit .flipBottom {
+  bottom: 0;
+  transform-origin: top; /* 플립 방향 설정 */
+  transform: rotateX(180deg); /* 초기 상태에서 뒤집힌 상태 */
+}
+
+.flip {
+  animation: flip 0.6s forwards;
+}
+
+@keyframes flip {
+  0% {
+    transform: rotateX(0);
+  }
+  25% {
+    transform: rotateX(90deg);
+  }
+  50% {
+    transform: rotateX(180deg);
+  }
+  75% {
+    transform: rotateX(270deg);
+  }
+  100% {
+    transform: rotateX(360deg);
+  }
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: row; /* 버튼을 가로로 나열 */
+  justify-content: center; /* 버튼을 중앙 정렬 */
+  gap: 400px;
+  margin-bottom: 20px;
+}
+
+.checkButton {
+  width: 300px;
+  height: 250px;
+  background: #ff8803;
+  color: #fff;
+  font-weight: 700;
+  font-size: 6rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.checkButton:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.checkButton:hover:not(:disabled) {
+  background: #ff5e00;
+}
+
+.timeInfoTitle {
+  display: flex;
+  flex-direction: column; /* 시간 정보를 세로로 나열 */
+  align-items: center; /* 시간 정보를 중앙 정렬 */
+  margin-top: 50px;
+  font-size: 4rem;
+  font-weight: 800;
+  gap: 150px;
+  color: #ff5e00;
+}
+
+.timeInfo {
+  width: 500px;
+  border-radius: 5px;
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+  color: rgba(43, 42, 42, 0.9);
+}
+
+.timeLabelBox {
+  position: absolute;
+  margin-top: 300px;
+  width: 500px;
+  border-radius: 5px;
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.timeLabel {
+  font-size: 3rem;
+  font-weight: 600;
+  color: rgba(43, 42, 42, 0.9);
+}
+
+.validationMessage {
+  margin-top: 10px;
+  color: #ff5e00;
+  font-weight: 600;
+}
+
+.modalBackdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContent {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.modalButtons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.confirmButton, .cancelButton {
+  width: 48%;
+  height: 2.5rem;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.confirmButton {
+  background: #ff8803;
+}
+
+.cancelButton {
+  background: #ccc;
+}
+
+.confirmButton:hover {
+  background: #ff5e00;
+}
+
+.cancelButton:hover {
+  background: #bbb;
+}

@@ -1,0 +1,66 @@
+.slaveRegistPageWage-box {
+  display: flex;
+  justify-content: left;
+  width: 43rem;
+  // height: 2.5rem;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 45px;
+  padding-left: 4.5rem;
+  // border: 1px solid rgb(120, 1, 255);
+
+  .slaveRegistPageWage-title {
+    width: 10rem;
+  }
+
+  .slaveRegistPageWage-contentBox {
+
+    .slaveRegistPageWage-content {
+      width: 21.5rem;
+      height: 2.5rem;
+      //-------------
+      display: flex;
+
+      .nonWageType {
+        width: 10.8rem;
+        height: 2.5rem;
+        //-------------
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        //------------------
+        font-weight: 600;
+        color: rgb(255, 255, 255);
+        //--------------------------
+        border: 0.1px solid rgb(255, 255, 255, 0.3);
+        //--------------------------------------
+        cursor: pointer;
+        //-------------------------------------------
+        background: rgb(204, 204, 204);
+      }
+
+      .wageType {
+        width: 10.8rem;
+        height: 2.5rem;
+        //-------------
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        //------------------
+        font-weight: 600;
+        color: rgb(255, 255, 255);
+        //--------------------------
+        //border: 1px solid rgb(1, 119, 115);
+        cursor: pointer;
+        //---------------------------------------------
+        background: #ff8803;
+      }
+
+      .slaveRegistPageInputWage-input {
+        width: 14.5rem;
+        height: 2.2rem;
+        margin: 15px 10px 0 10px;
+      }
+    }
+  }
+}

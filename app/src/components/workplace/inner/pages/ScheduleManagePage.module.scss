@@ -1,0 +1,155 @@
+.scheduleTitle {
+  text-align: left;
+  font-size: 20px;
+  border-bottom: 2px solid #ffc107;
+  padding-bottom: 10px;
+  margin: 20px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.addSchedulebutton {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff8803;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #ff5e00;
+  }
+}
+
+.schedule {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px 30px;
+  justify-content: space-between;
+  position: relative;
+}
+
+.todaySchedule {
+  width: 650px;
+  height: 350px;
+  background: rgba(245, 245, 245, 0.8);
+  padding: 10px;
+  margin: 20px 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow-y: auto;
+
+  h4 {
+    align-self: center;
+    text-align: center;
+    margin: 15px 10px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #6c757d;
+  }
+
+  span {
+    text-align: right;
+    margin-right: 30px;
+    margin-bottom: 5px;
+    font-size: 15px;
+  }
+}
+
+.extraSchedule {
+  width: 650px;
+  height: 240px;
+  background: rgba(245, 245, 245, 0.8);
+  padding: 10px 20px;
+  margin: 5px 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow-y: auto;
+
+  h4 {
+    align-self: center;
+    text-align: center;
+    margin: 15px 10px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #6c757d;
+  }
+
+  span {
+    text-align: right;
+    margin-right: 30px;
+    margin-bottom: 5px;
+    font-size: 15px;
+  }
+}
+
+.scheduleItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  margin: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: #ffffff;
+  align-items: center;
+  width: 90%;
+}
+
+.scheduleItemName {
+  flex: 1;
+  font-size: 16px;
+}
+
+.scheduleItemTime {
+  flex: 1;
+  font-size: 16px;
+  text-align: right;
+}
+
+.scheduleList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+}
+
+// 추가근무자 리스트 항목
+.extraScheduleItem {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  margin: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: #ffffff;
+  align-items: center;
+  width: 90%;
+
+  &:hover .extraScheduleItemButton {
+    display: flex;
+  }
+}
+
+// 추가근무자 삭제 버튼
+.extraScheduleItemButton {
+  position: absolute;
+  top: 7px;
+  left: -31px;
+  border: none;
+  font-size: 30px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #d54444;
+
+  &:hover {
+    //background-color: gray;
+  }
+}

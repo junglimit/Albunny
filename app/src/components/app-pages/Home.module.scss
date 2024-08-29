@@ -1,0 +1,81 @@
+.wrap2 {
+    display: flex;
+    margin: 100px;
+    margin-top: 200px;
+}
+
+.img {
+    width: 50%;
+    max-width: 100%; /* 이미지가 부모의 너비를 초과하지 않도록 설정 */
+    height: auto; /* 이미지 비율 유지 */
+    margin-bottom: 2rem; /* 이미지와 텍스트 사이의 여백 */
+    margin: auto;
+}
+
+.img2 {
+    width: 700px;
+    height: 425px;
+    margin: auto;
+}
+
+.img3 {
+    width: 900px;
+    height: 450px;
+}
+
+.infotext {
+    margin: auto;
+}
+
+.header {
+    // text-align: center; /* 텍스트 가운데 정렬 */
+    font-size: 3.3rem;
+    font-weight: 900;
+    color:#ff5e00;
+    margin-bottom: 1rem;
+}
+
+.header2 {
+    // text-align: center; 
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.ptext {
+    margin-top: 65px;
+    font-size: 1.55rem;
+    color: #aeadad;
+    // max-width: 600px;
+    // margin: 0 auto; 
+}
+
+.lastwrap {
+    display: flex;
+    margin: 100px;
+}
+
+.footer {
+    align-content: center;
+    background-color: #ff8803;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    margin-top: 20vh;
+    width: 100%;
+}
+
+/* 기존 스타일 */
+.logo {
+    height: 160px;
+    float: inline-end;
+    animation: shake 1s infinite; /* 애니메이션 추가 */
+  }
+  
+  /* 애니메이션 정의 */
+  @keyframes shake {
+    0% { transform: rotate(-30deg); }
+    50% { transform: rotate(30deg); }
+    100% { transform: rotate(-30deg); }
+  }

@@ -1,0 +1,146 @@
+.content-box {
+  padding: 20px;
+  font-size: 20px;
+
+  .slaveManagementHeader-box {
+    width: 100%;
+    height: 1%;
+    //-----------
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    //-----------------------------------------
+    margin: 0 auto;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #ffc107;
+  
+    // .slaveManagementHeader-title {
+    //   // width: 7.6rem;
+    //   height: 3rem;
+    //   //----------------------------
+    //   font-size: 40px;
+    //   font-weight: 600;
+    //   letter-spacing: 2px;
+    //   color: rgba(43, 42, 42, 0.8);
+    //   //-----------------------------
+    //   // border: 3px solid red;
+    // }
+  
+    .link-text {
+      text-decoration: none;
+      color: rgb(255, 255, 255);
+    }
+  
+    .headerButton {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: #ff8803;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-bottom: 30px;
+    }
+    .headerButton:hover {
+      background-color: #ff5e00;
+      cursor: pointer;
+    }
+  }
+  
+  .slaveManagementTitle-box {
+    width: 100%;
+    height: 4rem;
+    //-------------
+    display: flex;
+    align-items: end;
+    //------------------
+    font-size: 20px;
+    margin-bottom: 10px;
+
+    .slaveListType {
+      padding: 10px 20px;
+      // height: 4.2rem;
+      //---------------
+      font-weight: 600;
+      color: rgb(255, 255, 255);
+      letter-spacing: 1px;
+      //----------------------
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      //----------------------
+      margin-right: 8px;
+      // border: 3px solid red;
+      border-radius: 5px;
+      cursor: pointer;
+      //----------------------------------
+      background: #cccccc;
+
+      &:hover {
+        background-color: #bbbbbb;
+      }
+    }
+  
+    .slaveListSelectType {
+      padding: 10px 20px;
+      // height: 4.2rem;
+      //---------------
+      background-color: #ff8803;
+      font-weight: 600;
+      color: rgb(255, 255, 255);
+      letter-spacing: 1px;
+      //----------------------
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      //----------------------
+      border: none;
+      border-radius: 5px;
+      margin-right: 8px;
+      cursor: pointer;
+    }
+    .slaveListSelectType:hover {
+      background-color: #ff5e00;
+      cursor: pointer;
+    }
+
+    .slaveListCount {
+      font-size: 16px;
+    }
+  
+    .slaveManagementTitle-searchbox {
+      width: 18.5rem;
+      height: 3rem;
+      //-------------
+      display: flex;
+      align-items: center;
+      //------------------
+      border: 0.1rem solid black;
+      border-radius: 5px;
+      margin: 24px 0 0px 44.2rem;
+  
+      .slaveManagementTitle-search {
+        width: 16rem;
+        height: 2.25rem;
+        //---------------
+        justify-content: center;
+        //----------------------
+        padding: 10px;
+        //------------
+        outline: none;
+        border: none;
+      }
+  
+      .slaveManagementList-question {
+        width: 1.3rem;
+        height: 1.3rem;
+        color: rgba(0, 0, 0, 0.9);
+        margin: 1px 10px;
+      }
+    }
+  }
+}

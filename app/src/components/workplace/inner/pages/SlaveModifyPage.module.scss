@@ -1,0 +1,172 @@
+.slaveRegistPage {
+  padding: 20px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .slaveRegistPageHeader-box {
+    width: 100%;
+    height: 1%;
+    //-----------
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    //-----------------------------------------
+    margin: 0 auto;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #ffc107;
+
+    // .slaveRegistPageHeader-title {
+    //   // width: 7.6rem;
+    //   height: 3rem;
+    //   //----------------------------
+    //   font-size: 40px;
+    //   font-weight: 900;
+    //   letter-spacing: 2px;
+    //   color: rgba(43, 42, 42, 0.8);
+    //   //-----------------------------
+    //   // border: 3px solid red;
+    // }
+  }
+
+  .slaveRegistPageForm-box {
+    // padding: 20px 30px;
+    width: 86rem;
+    height: 43rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // border: 1px solid blue;
+
+    .slaveRegistPageForm-top {
+      width: 86rem;
+      height: 33rem;
+      display: flex;
+
+      .slaveRegistPageForm-left {
+        padding: 42px 0 0 0;
+        // border: 1px solid blue;
+      }
+
+      .slaveRegistPageForm-right {
+        // border: 1px solid red;
+        padding: 0 0 0 38px;
+      }
+
+      .slaveRegistPageInput-box {
+        display: flex;
+        justify-content: left;
+        width: 43rem;
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 37px;
+        padding-left: 4.5rem;
+
+        .slaveRegistPageInput-title {
+          width: 10rem;
+        }
+
+        .slaveRegistPageInput-input {
+          width: 21.5rem;
+          height: 2.5rem;
+        }
+      }
+    }
+
+    .slaveRegistPageForm-notice {
+      font-size: 14px;
+      color: red;
+      height: 40px;
+      margin: 10px;
+      padding: 12px 0;
+    }
+
+    .slaveRegistPageForm-bottom {
+      width: 86rem;
+      display: flex;
+      justify-content: center;
+
+      .slaveRegistPageButton-box {
+        height: 2.5rem;
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+        margin: 0 30px;
+
+        .link-text {
+          text-decoration: none;
+          color: rgb(255, 255, 255);
+        }
+
+        .slaveRegistPage-nonButton {
+          width: 14.8rem;
+          height: 2.5rem;
+          //-------------
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          //------------------
+          font-weight: 600;
+          color: rgb(255, 255, 255);
+          //--------------------------
+          border: 1px solid rgb(1, 119, 115);
+          background: #ccc;
+          border: none;
+          //---------------------------------------------
+          cursor: pointer;
+          border-radius: 5px;
+        }
+        .slaveRegistPage-button:hover {
+          background: #bbb;
+          color: rgb(255, 255, 255);
+          border: 0;
+        }
+
+        .slaveRegistPage-button{
+          width: 14.8rem;
+          height: 2.5rem;
+          //-------------
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          //------------------
+          font-weight: 600;
+          color: rgb(255, 255, 255);
+          //--------------------------
+          //border: 1px solid rgb(1, 119, 115);
+          cursor: pointer;
+          background: #ff8803;
+          border: none;
+          border: 0.1px solid rgb(255, 255, 255, 0.3);
+          //---------------------------------------------
+          border-radius: 5px;
+        }
+        .slaveRegistPage-nonButton:hover {
+          background: #ff5e00;
+        }
+
+        .slaveRegistPage-cancelButton {
+          width: 14.8rem;
+          height: 2.5rem;
+          //-------------
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          //------------------
+          font-weight: 600;
+          color: rgb(255, 255, 255);
+          //--------------------------
+          border: 1px solid rgb(1, 119, 115);
+          background: #ccc;
+          border: none;
+          //---------------------------------------------
+          cursor: pointer;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+}

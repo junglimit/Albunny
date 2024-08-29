@@ -1,0 +1,58 @@
+.slaveRegistPageScheduleModal-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.slaveRegistPageScheduleModal-content {
+  display: flex;
+  margin: 0 0 4px 0;
+  // border: 10px solid red;
+  //----------------------
+
+  .nonDaySchedule {
+    width: 2.4rem;
+    height: 2.4rem;
+    //-------------
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //-----------------
+    font-weight: 600;
+    color: #fff;
+    //------------------
+    border: none;
+    cursor: pointer;
+    //--------------
+    background: #ccc;
+  }
+
+  .selectedDaySchedule {
+    width: 2.4rem;
+    height: 2.4rem;
+    //-------------
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //-----------------
+    font-weight: 600;
+    color: #fff;
+    //------------------
+    border: none;
+    cursor: pointer;
+    //--------------
+    background: #ff8803;
+  }
+
+  .slaveRegistPageInputSchedule-label {
+    margin-right: 20px;
+    font-size: 16px;
+  }
+
+  .slaveRegistPageInputSchedule-input {
+    width: 10rem;
+    height: 2.2rem;
+    margin: 0 5px 0 10px;
+    margin-right: 10px;
+    padding: 1px 10px 1px 20px;
+  }
+}

@@ -1,0 +1,13 @@
+/* index.scss 또는 App.scss */
+@import url('https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css');
+
+/* 글로벌 스타일 설정 */
+body {
+    font-family: 'NanumSquareRound', sans-serif;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  letter-spacing: 5px;
+}

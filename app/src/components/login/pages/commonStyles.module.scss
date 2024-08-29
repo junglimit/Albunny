@@ -1,0 +1,151 @@
+.fullPageContainer {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signUpContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 400px;
+}
+
+// 사업장 리스트와 등록, 수정 페이지에 맞게 - width 크기만 조정
+.signUpContainer2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 650px;
+}
+
+.signUpTitle {
+  background-color: #ff8803;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  margin-bottom: 20px;
+  border-radius: 10px 10px 0 0;
+  color: white;
+}
+
+// 사업장 등록, 사업장 수정과 같은 타이틀 크기만 조정
+.signUpTitle2 {
+  background-color: #ff8803;
+  width: 600px;
+  text-align: center;
+  padding: 10px 0;
+  margin-bottom: 20px;
+  border-radius: 10px 10px 0 0;
+  color: white;
+}
+
+.inputContainer {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.inputLabel {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.inputWithButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.inputField {
+  width: 100%; /* 이메일 입력 필드의 너비를 다른 필드와 동일하게 설정 */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.smallButton {
+  padding: 10px 15px;
+  background-color: #ff8803;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  white-space: nowrap;
+  margin-left: 10px; /* 버튼과 입력 필드 사이에 약간의 간격 추가 */
+}
+
+.smallButton:hover {
+  background: #ff5e00;
+}
+
+.submitButton {
+  width: 100%;
+  padding: 10px;
+  background-color: #ff8803;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+}
+
+.submitButton:hover {
+  background: #ff5e00;
+}
+
+// 등록 / 취소 버튼 추가
+.buttonContainer {
+  gap: 30px;
+}
+
+.cancelButton {
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #ccc;
+  color: #fff;
+  width: 100px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.submitButton2 {
+  // padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color:#ff8803;
+  color: #fff;
+  width: 100px;
+  height: 50px;
+}
+
+.submitButton2:hover {
+  background: #ff5e00;
+}
+
+.cancelButton:hover {
+  background: #bbb;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+.success {
+  color: green;
+  margin-top: 10px;
+}
