@@ -30,11 +30,12 @@ public class EmailVerificationService {
     public void sendVerificationCode(String email, boolean isPasswordReset) {
         Optional<Master> optionalMaster = masterRepository.findByMasterEmail(email);
 
+        // 비밀번호 찾기 기능에서 호출 되었을 경우
         if (isPasswordReset) {
             if (optionalMaster.isEmpty()) {
                 throw new IllegalArgumentException("존재하지 않는 이메일입니다.");
             }
-        } else {
+        } else { // 회원가입에서 호출 되었을 경우
             if (optionalMaster.isPresent()) {
                 Master master = optionalMaster.get();
                 if (master.isEmailVerified()) {
