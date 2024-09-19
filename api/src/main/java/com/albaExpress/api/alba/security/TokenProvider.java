@@ -19,14 +19,14 @@ import java.util.Date;
 public class TokenProvider {
 
     @Value("${jwt.secret}")
-    private String SECRET_KEY;
+    private String SECRET_KEY; // 페이로드에 서명되는 키
 
     public String createToken(Master master) {
         return Jwts.builder()
-                .setSubject(master.getId())
+                .setSubject(master.getId()) // 키에 담을 정보들
                 .claim("email", master.getMasterEmail())
                 .setIssuedAt(new Date())
-                .setExpiration(Date.from(Instant.now().plus(1, ChronoUnit.DAYS)))
+                .setExpiration(Date.from(Instant.now().plus(1, ChronoUnit.DAYS))) // 토큰 유효시간. 보통은 15분정도로 함
                 .signWith(Keys.hmacShaKeyFor(SECRET_KEY.getBytes()), SignatureAlgorithm.HS512)
                 .compact();
     }

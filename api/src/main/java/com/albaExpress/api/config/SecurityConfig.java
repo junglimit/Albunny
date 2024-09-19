@@ -16,7 +16,8 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 
 @Configuration
 @EnableWebSecurity
-public class SecurityConfig extends WebSecurityConfigurerAdapter {
+public class SecurityConfig {
+    //WebSecurityConfigurerAdapter 상속은 스프링 시큐리티 5.7 이후로 권장X
 
     private final CustomUserDetailsService customUserDetailsService;
     private final JwtAuthFilter jwtAuthFilter;
@@ -26,12 +27,12 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         this.jwtAuthFilter = jwtAuthFilter;
     }
 
-    @Override
+    @Bean // 오버라이드 대신 각각 빈으로 직접 정의
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth.userDetailsService(customUserDetailsService).passwordEncoder(passwordEncoder());
     }
 
-    @Override
+    @Bean
     protected void configure(HttpSecurity http) throws Exception {
         http
                 .csrf().disable()
@@ -50,9 +51,11 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         return new BCryptPasswordEncoder();
     }
 
+
     @Bean
-    @Override
-    public AuthenticationManager authenticationManagerBean() throws Exception {
-        return super.authenticationManagerBean();
+    public AuthenticationManager authenticationManager(AuthenticationManagerBuilder auth) throws Exception {
+        return auth.userDetailsService(customUserDetailsService)
+                .passwordEncoder(passwordEncoder())
+                .and().build();
     }
 }
