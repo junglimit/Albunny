@@ -12,14 +12,14 @@ public class EmailService {
 
     private final JavaMailSender mailSender;
 
-    @Value("${study.mail.host}")
+    @Value("${study.mail.host}") // 보내는 사람 메일 yml 로 설정하기
     private String senderEmail;
 
     public void sendEmail(String to, String subject, String text) {
         SimpleMailMessage message = new SimpleMailMessage();
         message.setTo(to);
-        message.setSubject(subject);
-        message.setText(text);
+        message.setSubject(subject); // 메일의 제목
+        message.setText(text); // 메일의 내용
         message.setFrom(senderEmail); // 발신자 주소 설정
         mailSender.send(message);
     }

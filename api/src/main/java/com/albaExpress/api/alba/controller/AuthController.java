@@ -50,7 +50,7 @@ public class AuthController {
     @PostMapping("/check-email")
     public ResponseEntity<?> checkEmailAndSendCode(@RequestParam String email) {
         try {
-            emailVerificationService.sendVerificationCode(email, false);
+            emailVerificationService.sendVerificationCode(email, false); // 회원가입시의 메일 발송 false 로
             return ResponseEntity.ok("{\"message\":\"인증 코드가 이메일로 전송되었습니다.\"}");
         } catch (IllegalArgumentException e) {
             logger.error("이메일 확인 중 오류 발생: {}", e.getMessage());

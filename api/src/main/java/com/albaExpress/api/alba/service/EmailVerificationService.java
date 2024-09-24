@@ -44,11 +44,11 @@ public class EmailVerificationService {
             }
         }
 
-        String code = generateVerificationCode();
+        String code = generateVerificationCode(); // 랜덤한 값 4자리 수 인증코드
         LocalTime expiryDate = LocalTime.now().plusMinutes(5);
 
         Master master = optionalMaster.orElseGet(() -> {
-            Master newMaster = Master.builder()
+            Master newMaster = Master.builder() // 빌더 패턴으로 새로운 회원의 DB 값 변경
                     .masterEmail(email)
                     .emailVerified(false)  // 이메일 인증 여부 false로 설정
                     .build();
